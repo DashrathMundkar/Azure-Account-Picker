@@ -3,7 +3,7 @@
   "name": "Azure Account Picker",
   "version": "1.0.0",
   "description": "Forces Azure/Microsoft login to always prompt for account selection",
-  "permissions": ["webRequest", "declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
   "host_permissions": [
     "https://login.microsoftonline.com/*",
     "https://login.live.com/*",
