@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Azure Account Picker",
+  "version": "1.0.0",
+  "description": "Forces Azure/Microsoft login to always prompt for account selection",
+  "permissions": ["webRequest", "declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": [
+    "https://login.microsoftonline.com/*",
+    "https://login.live.com/*",
+    "https://login.windows.net/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "azure_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon48.png"
+  }
+}

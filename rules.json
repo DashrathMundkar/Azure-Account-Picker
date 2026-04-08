@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              { "key": "prompt", "value": "select_account" }
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "login.microsoftonline.com/*/oauth2/v2.0/authorize",
+      "resourceTypes": ["main_frame", "sub_frame"],
+      "excludedRequestMethods": ["post"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              { "key": "prompt", "value": "select_account" }
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "login.microsoftonline.com/*/oauth2/authorize",
+      "resourceTypes": ["main_frame", "sub_frame"],
+      "excludedRequestMethods": ["post"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              { "key": "prompt", "value": "select_account" }
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "login.live.com/*",
+      "resourceTypes": ["main_frame", "sub_frame"],
+      "excludedRequestMethods": ["post"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              { "key": "prompt", "value": "select_account" }
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "login.windows.net/*/oauth2/authorize",
+      "resourceTypes": ["main_frame", "sub_frame"],
+      "excludedRequestMethods": ["post"]
+    }
+  }
+]
