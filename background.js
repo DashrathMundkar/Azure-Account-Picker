@@ -3,5 +3,5 @@
 // Uses declarativeNetRequest rules (defined in rules.json) for MV3 compatibility.
 
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("[Azure Account Picker] Extension installed - account selection will be forced on Azure login.");
+  console.log("[Microsoft Login Picker] Extension installed - account selection will be forced on Azure login.");
 });

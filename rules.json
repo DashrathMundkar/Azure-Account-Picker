@@ -82,5 +82,49 @@
       "resourceTypes": ["main_frame", "sub_frame"],
       "excludedRequestMethods": ["post"]
     }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              { "key": "prompt", "value": "select_account" }
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "login.microsoftonline.com",
+      "resourceTypes": ["main_frame", "sub_frame"],
+      "excludedRequestMethods": ["post"],
+      "initiatorDomains": ["outlook.office.com"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              { "key": "prompt", "value": "select_account" }
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "login.microsoftonline.com",
+      "resourceTypes": ["main_frame", "sub_frame"],
+      "excludedRequestMethods": ["post"],
+      "initiatorDomains": ["portal.azure.com"]
+    }
   }
 ]

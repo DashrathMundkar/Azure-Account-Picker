@@ -1,13 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Azure Account Picker",
+  "name": "Microsoft Login Picker",
   "version": "1.0.0",
   "description": "Forces Azure/Microsoft login to always prompt for account selection",
   "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
   "host_permissions": [
     "https://login.microsoftonline.com/*",
     "https://login.live.com/*",
-    "https://login.windows.net/*"
+    "https://login.windows.net/*",
+    "https://outlook.office.com/*",
+    "https://portal.azure.com/*"
   ],
   "background": {
     "service_worker": "background.js"

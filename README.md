@@ -1,4 +1,4 @@
-# Azure Account Picker — Chrome Extension
+# Microsoft Login Picker — Chrome Extension
 
 A Chrome extension that forces Microsoft/Azure login pages to always show the **"Pick an account"** screen instead of automatically signing in with a cached account.
 
