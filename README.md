@@ -16,6 +16,11 @@ This extension intercepts Azure login requests and adds `prompt=select_account` 
 - `login.live.com` (Microsoft Live)
 - `login.windows.net` (Legacy Azure AD)
 
+### Also intercepts login redirects from
+
+- `outlook.office.com` (Outlook Web)
+- `portal.azure.com` (Azure Portal)
+
 ## Installation
 
 ### From Chrome Web Store
