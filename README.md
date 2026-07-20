@@ -24,7 +24,7 @@ This extension intercepts Azure login requests and adds `prompt=select_account` 
 ## Installation
 
 ### From Chrome Web Store
-*(Coming soon)*
+[*(Chrome webstore Link)*](https://chromewebstore.google.com/detail/microsoft-login-picker/lbammodolnfnfpmdpmalidpaeecnifmp?hl=en-GB&utm_source=ext_sidebar)
 
 ### Manual (Developer Mode)
 1. Clone or download this repository
